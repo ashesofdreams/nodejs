@@ -107,7 +107,7 @@ app.get("/sse", (req, res) => {
     clearInterval(intervalId);
   });
 });
-//文件下载
+//文件下载1
 app.get("/download", (req, res) => {
   const filename = req.query.filename;
   const filePath = path.join(__dirname, "uploads", filename);
